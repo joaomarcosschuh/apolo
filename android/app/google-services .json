@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "557630390067",
+    "project_id": "apolo-medflashcards",
+    "storage_bucket": "apolo-medflashcards.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557630390067:android:a4fd61c55bf11760b30846",
+        "android_client_info": {
+          "package_name": "com.example.apolo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "557630390067-ru8qk2k6ok2rtme4tj9khs2b0i9ifhvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6bKYa90hcxsvKg4z5Qer_PJCE3KtwPkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "557630390067-ru8qk2k6ok2rtme4tj9khs2b0i9ifhvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

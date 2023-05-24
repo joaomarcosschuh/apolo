@@ -19,7 +19,7 @@ class _AuthPageState extends State<AuthPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Autenticação'),
+        title: Text('Auth'),
       ),
       body: Center(
         child: Column(
@@ -27,30 +27,26 @@ class _AuthPageState extends State<AuthPage> {
           children: <Widget>[
             TextField(
               controller: _emailController,
-              decoration: InputDecoration(
-                labelText: 'Email',
-              ),
+              decoration: InputDecoration(labelText: 'Email'),
             ),
             TextField(
               controller: _passwordController,
-              decoration: InputDecoration(
-                labelText: 'Senha',
-              ),
+              decoration: InputDecoration(labelText: 'Password'),
               obscureText: true,
             ),
             ElevatedButton(
-              child: Text('Registrar'),
-              onPressed: () async {
-                await widget._controller.signUp(
+              child: Text('Sign Up'),
+              onPressed: () {
+                widget._controller.signUp(
                   _emailController.text,
                   _passwordController.text,
                 );
               },
             ),
             ElevatedButton(
-              child: Text('Entrar'),
-              onPressed: () async {
-                await widget._controller.signIn(
+              child: Text('Sign In'),
+              onPressed: () {
+                widget._controller.signIn(
                   _emailController.text,
                   _passwordController.text,
                 );

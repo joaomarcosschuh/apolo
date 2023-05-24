@@ -1,18 +1,19 @@
 // auth_controller.dart
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import '../../shared/repositories/user_repository.dart';
 
 class AuthController {
-  final FirebaseAuth _auth = FirebaseAuth.instance;
+  final UserRepository _userRepository;
 
+  AuthController(this._userRepository);
+
+  // Sign up method
   Future<void> signUp(String email, String password) async {
-    await _auth.createUserWithEmailAndPassword(email: email, password: password);
+    await _userRepository.signUp(email, password);
   }
 
+  // Sign in method
   Future<void> signIn(String email, String password) async {
-    await _auth.signInWithEmailAndPassword(email: email, password: password);
-  }
-
-  Future<void> signOut() async {
-    await _auth.signOut();
+    await _userRepository.signIn(email, password);
   }
 }

@@ -1,6 +1,8 @@
 name: my_medical_study_app
 description: A new Flutter project.
 
+publish_to: 'none'
+
 version: 1.0.0+1
 
 environment:
@@ -9,14 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  # Firebase packages
-  firebase_core: ^2.13.0
-  firebase_auth: ^4.6.1
-  cloud_firestore: ^4.7.1
-
-  # Other packages
-  # Add here other packages you need for your project
+  firebase_core: "^2.10.0"
+  firebase_auth: "^4.6.1"
 
 dev_dependencies:
   flutter_test:

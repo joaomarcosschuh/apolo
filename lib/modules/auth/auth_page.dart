@@ -1,4 +1,3 @@
-// auth_page.dart
 import 'package:flutter/material.dart';
 import 'auth_controller.dart';
 
